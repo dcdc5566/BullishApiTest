@@ -34,13 +34,17 @@ Karate Reports
 
 Cucumber reporting 
 **Implemneted Features**
+
 - Karate Cucumber reporting improvements 
+
+
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time:  33.199 s
 [INFO] Finished at: 2022-05-16T19:42:23+08:00
 [INFO] ------------------------------------------------------------------------
+
 
 
 
@@ -54,7 +58,7 @@ Cucumber reporting
 [INFO] Finished at: 2022-05-16T19:43:38+08:00
 [INFO] ------------------------------------------------------------------------
 
- Stored response in data file and assert in Feature files 
+# Stored response in data file and assert in Feature files 
 - Create unique username and send request and get response
 - Implemneted Token api for simple authentication get access token and run before every feature 
 - One time token and genric header step up 
