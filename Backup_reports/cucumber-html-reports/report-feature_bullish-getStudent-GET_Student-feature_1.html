@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: bullish/getStudent/GET_Student.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>16 May 2022, 20:23</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">bullish/getStudent/GET_Student.feature</td>
+                    <td      class="passed"    >31</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">31</td>
+
+          <td  class="passed"    >4</td>
+          <td >0</td>
+          <td class="total">4</td>
+
+          <td class="duration" data-value="3532180964">3s 532ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">bullish/getStudent/GET_Student.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Get Student by id and class
+Steps to follow 
+1.Get student by id 
+2.Get student by classname
+3.Validate the data type of response values</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">002ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/studentmgmt/fetchStudents'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">766ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get student id with 23 and respone code is 200</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param id = 23</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">758ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>20:23:06.700 request:
+1 &gt; GET http://localhost:9080/studentmgmt/fetchStudents?id=23
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:23:07.373 response time in milliseconds: 672
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 16 May 2022 12:23:06 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  }
+]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>20:23:07.376 [print] [
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response ==</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>[
+{
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: DeepaliUpdate,
+    &quot;lastName&quot;: Chaudhari,
+    &quot;studentClass&quot;: 3C,
+    &quot;nationality&quot;: India
+}
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">002ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/studentmgmt/fetchStudents'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 161ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get student id with 23 and respone code is 200</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param id = 782</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 158ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>20:23:06.699 request:
+1 &gt; GET http://localhost:9080/studentmgmt/fetchStudents?id=782
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:23:07.851 response time in milliseconds: 1152
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 16 May 2022 12:23:07 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[
+  {
+    &quot;id&quot;: 782,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  }
+]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>20:23:07.866 [print] [
+  {
+    &quot;id&quot;: 782,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response ==</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>[
+{
+    &quot;id&quot;: 782,
+    &quot;firstName&quot;: Mike,
+    &quot;lastName&quot;: Wong,
+    &quot;studentClass&quot;: 3 A,
+    &quot;nationality&quot;: Singapore
+}
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">001ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/studentmgmt/fetchStudents'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">635ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get student class 3C  and respone code is 200</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param studentClass = &quot;3C&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">632ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>20:23:06.742 request:
+1 &gt; GET http://localhost:9080/studentmgmt/fetchStudents?studentClass=3C
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:23:07.368 response time in milliseconds: 626
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 16 May 2022 12:23:06 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  }
+]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>20:23:07.393 [print] [
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response ==</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>[
+{
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+}
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/studentmgmt/fetchStudents'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">961ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-24">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get student all the recorsd and match datatype  and respone code is 200</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-24" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-25" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">885ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>20:23:07.399 request:
+1 &gt; GET http://localhost:9080/studentmgmt/fetchStudents
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:23:08.280 response time in milliseconds: 880
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 16 May 2022 12:23:07 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[
+  {
+    &quot;id&quot;: 0,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;firstName&quot;: &quot;Deepali  &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 44,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 195,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 257,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 355,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 383,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 394,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 426,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 448,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 463,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 530,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 539,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 559,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 582,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 653,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 664,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 677,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 693,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 724,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 725,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 782,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 843,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 850,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 878,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 932,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 979,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 4444444,
+    &quot;firstName&quot;: &quot;MikeUpdate&quot;,
+    &quot;lastName&quot;: &quot;WongUpdate&quot;,
+    &quot;studentClass&quot;: &quot;3 D Update&quot;,
+    &quot;nationality&quot;: &quot;SingaporeUpdate&quot;
+  },
+  {
+    &quot;id&quot;: 444444444,
+    &quot;firstName&quot;: &quot;MikeUpdate&quot;,
+    &quot;lastName&quot;: &quot;WongUpdate&quot;,
+    &quot;studentClass&quot;: &quot;3 D Update&quot;,
+    &quot;nationality&quot;: &quot;SingaporeUpdate&quot;
+  }
+]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">067ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>20:23:08.349 [print] [
+  {
+    &quot;id&quot;: 0,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;firstName&quot;: &quot;Deepali  &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 44,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 195,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 257,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 355,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 383,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 394,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 426,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 448,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 463,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 530,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 539,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 559,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 582,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 653,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 664,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 677,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 693,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 724,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 725,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 782,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 843,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 850,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 878,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 932,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 979,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 4444444,
+    &quot;firstName&quot;: &quot;MikeUpdate&quot;,
+    &quot;lastName&quot;: &quot;WongUpdate&quot;,
+    &quot;studentClass&quot;: &quot;3 D Update&quot;,
+    &quot;nationality&quot;: &quot;SingaporeUpdate&quot;
+  },
+  {
+    &quot;id&quot;: 444444444,
+    &quot;firstName&quot;: &quot;MikeUpdate&quot;,
+    &quot;lastName&quot;: &quot;WongUpdate&quot;,
+    &quot;studentClass&quot;: &quot;3 D Update&quot;,
+    &quot;nationality&quot;: &quot;SingaporeUpdate&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response[0].firstName  == &quot;#string&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response[0].lastName  == &quot;#string&quot;</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response[0].nationality  == &quot;#string&quot;</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response[0].studentClass  == &quot;#string&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response[0].id  == &quot;#number&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

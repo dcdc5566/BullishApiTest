@@ -1,0 +1,77 @@
+20:21:30.868 [com.intuit.karate.cli.Main.main()]  INFO  com.intuit.karate - Karate version: 1.1.0
+20:21:31.183 [com.intuit.karate.cli.Main.main()]  DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:21:31.216 [com.intuit.karate.cli.Main.main()]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 12
+20:21:33.292 [com.intuit.karate.cli.Main.main()]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9080/studentmgmt/fetchStudents?id=23
+1 > Accept: application/json
+1 > Host: localhost:9080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:21:33.403 [com.intuit.karate.cli.Main.main()]  DEBUG com.intuit.karate - response time in milliseconds: 73
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 16 May 2022 12:21:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[
+  {
+    "id": 23,
+    "firstName": "DeepaliUpdate",
+    "lastName": "Chaudhari",
+    "studentClass": "3C",
+    "nationality": "India"
+  }
+]
+
+20:21:33.415 [com.intuit.karate.cli.Main.main()]  INFO  com.intuit.karate - [print] [
+  {
+    "id": 23,
+    "firstName": "DeepaliUpdate",
+    "lastName": "Chaudhari",
+    "studentClass": "3C",
+    "nationality": "India"
+  }
+]
+ 
+20:21:33.460 [com.intuit.karate.cli.Main.main()]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 12
+20:21:33.480 [com.intuit.karate.cli.Main.main()]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9080/studentmgmt/fetchStudents?id=782
+1 > Accept: application/json
+1 > Host: localhost:9080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:21:33.503 [com.intuit.karate.cli.Main.main()]  DEBUG com.intuit.karate - response time in milliseconds: 22
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 16 May 2022 12:21:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[
+  {
+    "id": 782,
+    "firstName": "Mike",
+    "lastName": "Wong",
+    "studentClass": "3 A",
+    "nationality": "Singapore"
+  }
+]
+
+20:21:33.509 [com.intuit.karate.cli.Main.main()]  INFO  com.intuit.karate - [print] [
+  {
+    "id": 782,
+    "firstName": "Mike",
+    "lastName": "Wong",
+    "studentClass": "3 A",
+    "nationality": "Singapore"
+  }
+]
+ 
+20:21:34.586 [com.intuit.karate.cli.Main.main()]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/bullish/GetStudent/GET_Student.feature

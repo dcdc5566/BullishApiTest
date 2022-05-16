@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>bullish.getStudent.GET_Student</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-05-16 08:23:11 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:32]"><span>[1.1:32]</span> <span>Get student id with 23 and respone code is 200</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:33]"><span>[1.2:33]</span> <span>Get student id with 23 and respone code is 200</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:35]"><span>[2:35]</span> <span>Get student class 3C  and respone code is 200</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:55]"><span>[3:55]</span> <span>Get student all the recorsd and match datatype  and respone code is 200</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">bullish/getStudent/GET_Student.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get Student by id and class</span>
+          <span class="feature-description">Steps to follow 
+1.Get student by id 
+2.Get student by classname
+3.Validate the data type of response values</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:32]</span>
+                <span class="scenario-name">Get student id with 23 and respone code is 200</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>769</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/studentmgmt/fetchStudents&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param id = 23</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">759</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">20:23:06.700 request:
+1 &gt; GET http://localhost:9080/studentmgmt/fetchStudents?id=23
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:23:07.373 response time in milliseconds: 672
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 16 May 2022 12:23:06 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  }
+]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">20:23:07.376 [print] [
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.17">[
+{
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: DeepaliUpdate,
+    &quot;lastName&quot;: Chaudhari,
+    &quot;studentClass&quot;: 3C,
+    &quot;nationality&quot;: India
+}
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:33]</span>
+                <span class="scenario-name">Get student id with 23 and respone code is 200</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1165</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/studentmgmt/fetchStudents&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param id = 782</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1158</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.14">20:23:06.699 request:
+1 &gt; GET http://localhost:9080/studentmgmt/fetchStudents?id=782
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:23:07.851 response time in milliseconds: 1152
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 16 May 2022 12:23:07 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[
+  {
+    &quot;id&quot;: 782,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  }
+]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.16">20:23:07.866 [print] [
+  {
+    &quot;id&quot;: 782,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.17">[
+{
+    &quot;id&quot;: 782,
+    &quot;firstName&quot;: Mike,
+    &quot;lastName&quot;: Wong,
+    &quot;studentClass&quot;: 3 A,
+    &quot;nationality&quot;: Singapore
+}
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:35]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:35]</span>
+                <span class="scenario-name">Get student class 3C  and respone code is 200</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>637</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:35]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/studentmgmt/fetchStudents&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param studentClass = &quot;3C&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">632</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">20:23:06.742 request:
+1 &gt; GET http://localhost:9080/studentmgmt/fetchStudents?studentClass=3C
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:23:07.368 response time in milliseconds: 626
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 16 May 2022 12:23:06 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  }
+]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">20:23:07.393 [print] [
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.40">[
+{
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+}
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:55]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:55]</span>
+                <span class="scenario-name">Get student all the recorsd and match datatype  and respone code is 200</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>962</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:55]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/studentmgmt/fetchStudents&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">886</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.56">20:23:07.399 request:
+1 &gt; GET http://localhost:9080/studentmgmt/fetchStudents
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:23:08.280 response time in milliseconds: 880
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 16 May 2022 12:23:07 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[
+  {
+    &quot;id&quot;: 0,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;firstName&quot;: &quot;Deepali  &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 44,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 195,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 257,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 355,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 383,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 394,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 426,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 448,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 463,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 530,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 539,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 559,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 582,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 653,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 664,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 677,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 693,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 724,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 725,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 782,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 843,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 850,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 878,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 932,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 979,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 4444444,
+    &quot;firstName&quot;: &quot;MikeUpdate&quot;,
+    &quot;lastName&quot;: &quot;WongUpdate&quot;,
+    &quot;studentClass&quot;: &quot;3 D Update&quot;,
+    &quot;nationality&quot;: &quot;SingaporeUpdate&quot;
+  },
+  {
+    &quot;id&quot;: 444444444,
+    &quot;firstName&quot;: &quot;MikeUpdate&quot;,
+    &quot;lastName&quot;: &quot;WongUpdate&quot;,
+    &quot;studentClass&quot;: &quot;3 D Update&quot;,
+    &quot;nationality&quot;: &quot;SingaporeUpdate&quot;
+  }
+]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">67</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.58">20:23:08.349 [print] [
+  {
+    &quot;id&quot;: 0,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;firstName&quot;: &quot;Deepali  &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 23,
+    &quot;firstName&quot;: &quot;DeepaliUpdate&quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;3C&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 44,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 195,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 257,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 355,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 383,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: &quot;India&quot;
+  },
+  {
+    &quot;id&quot;: 394,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 426,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 448,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 463,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 530,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 539,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 559,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 582,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 653,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 664,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 677,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 693,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 724,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 725,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 782,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 843,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 850,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 878,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 932,
+    &quot;firstName&quot;: &quot;Deepali &quot;,
+    &quot;lastName&quot;: &quot;Chaudhari&quot;,
+    &quot;studentClass&quot;: &quot;A&quot;,
+    &quot;nationality&quot;: null
+  },
+  {
+    &quot;id&quot;: 979,
+    &quot;firstName&quot;: &quot;Mike&quot;,
+    &quot;lastName&quot;: &quot;Wong&quot;,
+    &quot;studentClass&quot;: &quot;3 A&quot;,
+    &quot;nationality&quot;: &quot;Singapore&quot;
+  },
+  {
+    &quot;id&quot;: 4444444,
+    &quot;firstName&quot;: &quot;MikeUpdate&quot;,
+    &quot;lastName&quot;: &quot;WongUpdate&quot;,
+    &quot;studentClass&quot;: &quot;3 D Update&quot;,
+    &quot;nationality&quot;: &quot;SingaporeUpdate&quot;
+  },
+  {
+    &quot;id&quot;: 444444444,
+    &quot;firstName&quot;: &quot;MikeUpdate&quot;,
+    &quot;lastName&quot;: &quot;WongUpdate&quot;,
+    &quot;studentClass&quot;: &quot;3 D Update&quot;,
+    &quot;nationality&quot;: &quot;SingaporeUpdate&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response[0].firstName  == &quot;#string&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response[0].lastName  == &quot;#string&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response[0].nationality  == &quot;#string&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response[0].studentClass  == &quot;#string&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response[0].id  == &quot;#number&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

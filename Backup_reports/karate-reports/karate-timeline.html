@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"bullish\/getStudent\/DELETE_Student[1:10]","start":1652703784847,"end":1652703787382,"title":"bullish\/getStudent\/DELETE_Student[1:10] 20:23:04.847-20:23:07.382 Delete student from the Database"},{"id":2,"group":2,"content":"bullish\/getStudent\/DELETE_Student[2:52]","start":1652703784847,"end":1652703786582,"title":"bullish\/getStudent\/DELETE_Student[2:52] 20:23:04.847-20:23:06.582 Delete student which does not exist database"},{"id":3,"group":3,"content":"bullish\/getStudent\/DELETE_Student[3:69]","start":1652703784847,"end":1652703786725,"title":"bullish\/getStudent\/DELETE_Student[3:69] 20:23:04.847-20:23:06.725 Delete student without id"},{"id":4,"group":4,"content":"bullish\/getStudent\/DELETE_Student[4:84]","start":1652703784847,"end":1652703786670,"title":"bullish\/getStudent\/DELETE_Student[4:84] 20:23:04.847-20:23:06.670 Delete student where id datatype is not long"},{"id":5,"group":1,"content":"bullish\/getStudent\/POST_Student[1:18]","start":1652703787398,"end":1652703787928,"title":"bullish\/getStudent\/POST_Student[1:18] 20:23:07.398-20:23:07.928 Get Artist"},{"id":6,"group":3,"content":"bullish\/getStudent\/POST_Student[2:27]","start":1652703787402,"end":1652703787950,"title":"bullish\/getStudent\/POST_Student[2:27] 20:23:07.402-20:23:07.950 Create student which already existing id \/\/ 23 is existing in database  api returns 500 (This is bug it should return 400)"},{"id":7,"group":4,"content":"bullish\/getStudent\/POST_Student[3:47]","start":1652703787874,"end":1652703788230,"title":"bullish\/getStudent\/POST_Student[3:47] 20:23:07.874-20:23:08.230 To check id filed is mandory to crate user return 400"},{"id":8,"group":1,"content":"bullish\/getStudent\/POST_Student[4:66]","start":1652703787937,"end":1652703788283,"title":"bullish\/getStudent\/POST_Student[4:66] 20:23:07.937-20:23:08.283 To check firstname\/lastname\/Class filed is mandory to crate user return 400"},{"id":9,"group":3,"content":"bullish\/getStudent\/POST_Student[5:82]","start":1652703787957,"end":1652703788341,"title":"bullish\/getStudent\/POST_Student[5:82] 20:23:07.957-20:23:08.341 Create student without nationality user created with respond 200"},{"id":10,"group":4,"content":"bullish\/getStudent\/PUT_Student[1:27]","start":1652703788242,"end":1652703788443,"title":"bullish\/getStudent\/PUT_Student[1:27] 20:23:08.242-20:23:08.443 Update student firstname lastname class and nationality with respond 200"},{"id":11,"group":2,"content":"bullish\/getStudent\/GET_Student[1.1:32]","start":1652703786600,"end":1652703787378,"title":"bullish\/getStudent\/GET_Student[1.1:32] 20:23:06.600-20:23:07.378 Get student id with 23 and respone code is 200"},{"id":12,"group":4,"content":"bullish\/getStudent\/GET_Student[1.2:33]","start":1652703786685,"end":1652703787867,"title":"bullish\/getStudent\/GET_Student[1.2:33] 20:23:06.685-20:23:07.867 Get student id with 23 and respone code is 200"},{"id":13,"group":3,"content":"bullish\/getStudent\/GET_Student[2:35]","start":1652703786733,"end":1652703787393,"title":"bullish\/getStudent\/GET_Student[2:35] 20:23:06.733-20:23:07.393 Get student class 3C  and respone code is 200"},{"id":14,"group":2,"content":"bullish\/getStudent\/GET_Student[3:55]","start":1652703787391,"end":1652703788359,"title":"bullish\/getStudent\/GET_Student[3:55] 20:23:07.391-20:23:08.359 Get student all the recorsd and match datatype  and respone code is 200"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
