@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-public class studentApiTest {
+public class StudentApiTest {
     
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] { "json" }, true);
